@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WebSockets - Simple chat</title>
+
+        <style>
+        * { font-family:tahoma; font-size:12px; padding:0px; margin:0px; }
+        p { line-height:18px; }
+        #content, #CommunicationInterface { width:500px; margin-left:auto; }
+        #content { padding:5px; word-wrap: break-word; background:#363434; color: white; border-radius:5px; overflow-y: scroll;
+                   border:1px solid #CCC; margin-top:10px; height: 160px; }
+        #input { border-radius:2px; border:1px solid #ccc;
+                 margin-top:10px; padding:5px; width:400px;  }
+        #status { width:88px; display:block; float:left; margin-top:15px; }
+        </style>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.6.0/js/jsplumb.min.js"></script>
+    
+        <link rel="stylesheet" href="style1.css">
+        
+
+    </head>
+    
+    <body>
+        <div id="content"></div>
+        <div id="CommunicationInterface">
+            <span id="status">Connecting...</span>
+            <input type="text" id="input" disabled="disabled" />
+        </div>
+        
+        <div class='container' id="canvas">
+
+    <div id="R1" class="router_div">R1<br>AS:100</div>
+    
+    <div id="R2" class="router_div">R2<br>AS:100</div>
+    
+    <div id="R3" class="router_div" ondrop="dropin(event)"  ondragover="allowdrop(event)">R3<br>AS:100</div>
+    
+
+    <div id="R4" class="router_div">R4<br>AS:200</div>
+    
+    <div id="R5" class="router_div">R5<br>AS:200</div>
+    
+    <div id="R6" class="router_div" ondrop="dropin(event)"  ondragover="allowdrop(event)">R6<br>AS:200</div>
+    
+    
+    <div id="R7" class="router_div">R7<br>AS:300</div>
+    
+    <div id="R8" class="router_div">R8<br>AS:300</div>
+    
+    <div id="R9" class="router_div" ondrop="dropin(event)"  ondragover="allowdrop(event)">R9<br>AS:300</div>
+            
+        </div>
+            
+    <script src="./chat-frontend.js"></script>
+        <script src="script_01.js"></script>
+    
+    </body>
+</html>

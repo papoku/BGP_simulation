@@ -1,0 +1,100 @@
+
+      
+
+/* common properties for drag and drop div and thirddiv */
+.container .router_div{
+        
+    border: 1px solid #346789;
+    border-radius: 20px;
+    box-shadow: 2px 2px 19px #aaa;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    z-index: 21;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #eeeeef;
+    color: black;
+    font-family: helvetica, sans-serif;
+    padding: 0.5em;
+    font-size: 0.9em;
+    -webkit-transition: -webkit-box-shadow 0.15s ease-in;
+    -moz-transition: -moz-box-shadow 0.15s ease-in;
+    -o-transition: -o-box-shadow 0.15s ease-in;
+    transition: box-shadow 0.15s ease-in;
+    }
+ 
+
+.connectionlabel{
+    
+    background-color: #444;
+    padding: 0.4em;
+    font: 12px sans-serif;
+    color: white;
+    z-index: 21;
+    border: 1px solid red;
+}
+
+.endpointLabel {
+    z-index: 21;
+    cursor: pointer;
+}
+
+#R1{
+    
+    top: 5%;
+    left: 20%;
+}
+
+#R2{
+    
+    top: 5%;
+    left: 35%;
+}
+
+#R3{
+    
+    top: 20%;
+    left: 27%;
+}
+
+#R4{
+    
+    top: 50%;
+    left: 12%;
+}
+
+#R5{
+    
+    top: 65%;
+    left: 5%;
+}
+
+#R6{
+    
+    top: 65%;
+    left: 20%;
+}
+
+
+#R7{
+    
+    top: 50%;
+    left: 45%;
+}
+
+#R8{
+    
+    top: 65%;
+    left: 39%;
+}
+
+#R9{
+    
+    top: 65%;
+    left: 52%;
+}
