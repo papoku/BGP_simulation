@@ -2,6 +2,8 @@
 
 This is a routing simulation program I did as a part of a academic course project. Efficient tree traversal is the main idea behind this development. At least 9 routers has been taken to demonstrate the protocol. Connection can be created and deleted between routers, and message can be sent between them with best path selection. Node.js has been using at backend as a server for real time simulation environment, though 75% of the work has been done in client end.
 
+Project can be accessed from this link [Simulation.html](https://papoku.github.io/BGP_simulation/simulation.html). **Due to low bandwidth in GitHub, it might work a little slower than usual. Be patient !!** :D
+
 **Currently ..**
 * Connection can be created and deleted
 * Clicking on a connection will make it short
