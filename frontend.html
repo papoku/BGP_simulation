@@ -2,21 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>WebSockets - Simple chat</title>
-
-        <style>
-        * { font-family:tahoma; font-size:12px; padding:0px; margin:0px; }
-        p { line-height:18px; }
-        #content, #CommunicationInterface { width:500px; margin-left:auto; }
-        #content { padding:5px; word-wrap: break-word; background:#363434; color: white; border-radius:5px; overflow-y: scroll;
-                   border:1px solid #CCC; margin-top:10px; height: 160px; }
-        #input { border-radius:2px; border:1px solid #ccc;
-                 margin-top:10px; padding:5px; width:400px;  }
-        #status { width:88px; display:block; float:left; margin-top:15px; }
-        </style>
+        <title>BGP simulation</title>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.6.0/js/jsplumb.min.js"></script>
     
         <link rel="stylesheet" href="style1.css">
@@ -27,8 +18,58 @@
     <body>
         <div id="content"></div>
         <div id="CommunicationInterface">
-            <span id="status">Connecting...</span>
-            <input type="text" id="input" disabled="disabled" />
+            
+                <span id="status">Connecting...</span><br>
+            
+            
+            
+            <div id="interface">
+                
+                <div id="label">
+                
+                <span id="">Select Routers:</span>
+                
+                </div>
+                
+                <div id="msg_interface">
+                    
+                    <select class="router_name" id="routers_from">
+                        
+                        <option value="R1">R1</option>
+                        <option value="R2">R2</option>
+                        <option value="R3">R3</option>
+                        <option value="R4">R4</option>
+                        <option value="R5">R5</option>
+                        <option value="R6">R6</option>
+                        <option value="R7">R7</option>
+                        <option value="R8">R8</option>
+                        <option value="R9">R9</option>
+                        
+                    </select>TO
+                    <select class="router_name" id="routers_to">
+
+                        <option value="R1">R1</option>
+                        <option value="R2">R2</option>
+                        <option value="R3">R3</option>
+                        <option value="R4">R4</option>
+                        <option value="R5">R5</option>
+                        <option value="R6">R6</option>
+                        <option value="R7">R7</option>
+                        <option value="R8">R8</option>
+                        <option value="R9">R9</option>
+                        
+                    </select>
+
+                    
+                </div>
+                
+                <div id="send_msg">
+                    
+                    <input type="button" id="submit" value="Send">
+                
+                </div>
+            
+            </div>
         </div>
         
         <div class='container' id="canvas">
@@ -55,8 +96,8 @@
             
         </div>
             
-    <script src="./chat-frontend.js"></script>
-        <script src="script_01.js"></script>
+    <script src="./client_side_routing.js"></script>
+        <script src="jsplumb.js"></script>
     
     </body>
 </html>

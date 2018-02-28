@@ -1,5 +1,7 @@
 
       
+* { font-family:tahoma; font-size:12px; padding:0px; margin:0px; }
+
 
 /* common properties for drag and drop div and thirddiv */
 .container .router_div{
@@ -15,8 +17,8 @@
     text-align: center;
     z-index: 21;
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background-color: #eeeeef;
     color: black;
     font-family: helvetica, sans-serif;
@@ -97,4 +99,99 @@
     
     top: 65%;
     left: 52%;
+}
+
+#msg_interface{
+    
+    display: flex;
+    justify-content: space-around;
+    background-color: DodgerBlue;
+    color: aliceblue;
+    margin-top: 20px;
+    font-size: 1.3em;
+    align-items: center;
+    
+}
+
+
+.router_name{
+    
+font-size: 1em;
+text-align: center;
+padding: 8px 16px;
+}
+
+
+#label{
+    margin-top:50px;
+    font-family: helvetica;
+    
+    color: DodgerBlue;
+}
+
+#label span{
+    font-size: 1.5em;
+}
+
+#status{
+    font-size: 1.5em;
+    color: DodgerBlue;
+}
+
+#send_msg{
+    
+    margin-top: 20px;
+}
+
+
+#submit{
+    
+    font-size: 1em;
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: green;
+}
+
+#submit:active {
+    
+    border: 1px solid dodgerblue;
+}
+
+
+#content p, span{
+    font-size: 1.2em;
+    
+}
+
+
+#content, #CommunicationInterface { 
+    width:500px; 
+    margin-left:auto; 
+}
+
+#content { 
+    padding:5px; 
+    word-wrap: break-word; 
+    background:#363434; 
+    color: white; 
+    overflow-y: scroll;        
+    margin-top:10px; height: 300px;
+}
+
+#status { 
+    
+    width:88px; 
+    display:block; 
+    float:left; 
+    margin-top:15px; 
 }
